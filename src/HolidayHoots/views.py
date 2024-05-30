@@ -2,12 +2,12 @@ from django.shortcuts import render
 
 
 base_context = {
-    "main_site": "Love Linker",
-    "title": "Love Linker",
+    "main_site": "Holiday Hoots",
+    "title": "Holiday Hoots",
     "hostUrl": "http://localhost:8000/",
     "navigation": [
         {
-            "name": "Valentine",
+            "name": "Valentine's Day",
             "url": "valentine/"
         }
     ]
