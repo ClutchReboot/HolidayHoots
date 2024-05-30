@@ -28,17 +28,12 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown">
-						 	<a class="nav-link dropdown-toggle" href="{{ hostUrl }}" id="navbarDropdownMenuLink" data-bs-toggle="dropdown">Recipes</a>
+						 	<a class="nav-link dropdown-toggle" href="{{ hostUrl }}" id="navbarDropdownMenuLink" data-bs-toggle="dropdown">Holidays</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								{% for recipe in recipes %}
-								<a class="dropdown-item" href="/recipe/{{recipe.id}}">{{ recipe.recipeName }}</a>
+								{% for nav_item in navigation %}
+								<a class="dropdown-item" href="/{{ nav_item.url }}">{{ nav_item.name }}</a>
 								{% endfor %}
-								<div class="dropdown-divider">
-								</div> <a class="dropdown-item" href="#">Separated link</a>
 							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/api/">Api</a>
 						</li>
 					</ul>
 				</div>
@@ -46,18 +41,6 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2">
-			<ul class="nav flex-column">
-				{% for nav_item in navigation %}
-				<li class="nav-item">
-					<a class="nav-link active" href="{{nav_item.url}}">{{nav_item.name}}</a>
-				</li>
-				{% endfor %}
-				<li class="nav-item">
-					<a class="nav-link" href="#">Profile</a>
-				</li>
-			</ul>
-		</div>
 		<div class="col-md-8">
 			{% block content %}
 			{% endblock %}

@@ -7,12 +7,8 @@ base_context = {
     "hostUrl": "http://localhost:8000/",
     "navigation": [
         {
-            "name": "Home",
-            "url": "#main"
-        },
-        {
-            "name": "Favorites",
-            "url": "#favorites"
+            "name": "Valentine",
+            "url": "valentine/"
         }
     ]
 }
