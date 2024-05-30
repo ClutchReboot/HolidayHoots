@@ -3,21 +3,7 @@ from django.shortcuts import render
 from HolidayHoots.views import base_context
 
 
-base_context = {
-    "main_site": "Holiday Hoots",
-    "title": "Holiday Hoots | Valentine",
-    "hostUrl": "http://localhost:8000/",
-    "navigation": [
-        {
-            "name": "Home",
-            "url": "#main"
-        },
-        {
-            "name": "Favorites",
-            "url": "#favorites"
-        }
-    ]
-}
+base_context['title'] = 'Holiday Hoots | Valentine'
 
 
 def index(request):
