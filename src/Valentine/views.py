@@ -1,10 +1,11 @@
 from django.http import Http404
 from django.shortcuts import render
-from LoveLinker.views import base_context
+from HolidayHoots.views import base_context
+
 
 base_context = {
-    "main_site": "Love Linker",
-    "title": "Love Linker | Valentine",
+    "main_site": "Holiday Hoots",
+    "title": "Holiday Hoots | Valentine",
     "hostUrl": "http://localhost:8000/",
     "navigation": [
         {
